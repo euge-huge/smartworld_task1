@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header__background"></div>
       <div class="header__top header-top">
         <div class="header-top__logo">AppSon</div>
@@ -36,31 +36,35 @@
       <div class="header__devices"><img src="/img/Device.png" alt=""></div>
     </header>
 
-    <section class="features-cards container">
-      <div class="row">
-        <div class="col-xl-4 features-cards__card features-card">
-          <div class="features-card__icon features-card__icon_blue">
-            <img src="./img/analysis.svg" alt="analysis icon">
+    <div class="help-background">
+      <section class="features-cards container">
+        <div class="background"></div>
+        <div class="row">
+          <div class="col-xl-4 features-cards__card features-card">
+            <div class="features-card__icon features-card__icon_blue">
+              <img src="./img/analysis.svg" alt="analysis icon">
+            </div>
+            <h3 class="features-card__header">Analysis</h3>
+            <p class="features-card__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
           </div>
-          <h3 class="features-card__header">Analysis</h3>
-          <p class="features-card__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-        </div>
-        <div class="col-xl-4 features-cards__card features-card">
-          <div class="features-card__icon features-card__icon_pink">
-            <img src="./img/design.svg" alt="design icon">
+          <div class="col-xl-4 features-cards__card features-card">
+            <div class="features-card__icon features-card__icon_pink">
+              <img src="./img/design.svg" alt="design icon">
+            </div>
+            <h3 class="features-card__header">Clean Design</h3>
+            <p class="features-card__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
           </div>
-          <h3 class="features-card__header">Clean Design</h3>
-          <p class="features-card__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-        </div>
-        <div class="col-xl-4 features-cards__card features-card">
-          <div class="features-card__icon features-card__icon_green">
-            <img src="./img/messaging.svg" alt="messaging icon">
+          <div class="col-xl-4 features-cards__card features-card">
+            <div class="features-card__icon features-card__icon_green">
+              <img src="./img/messaging.svg" alt="messaging icon">
+            </div>
+            <h3 class="features-card__header">Messaging</h3>
+            <p class="features-card__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
           </div>
-          <h3 class="features-card__header">Messaging</h3>
-          <p class="features-card__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
+    
 
     <section class="features-stuff">
       <div class="features-stuff__back">
@@ -104,5 +108,186 @@
         </div>
       </div>
     </section>
+
+    <div class="help-background">
+      <section class="how-work container">
+        <div class="row">
+          <div class="col-xl-8 offset-xl-2">
+            <h2 class="how-work__header">How Does It Work?</h2>
+            <p class="how-work__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>    
+          </div>
+          </div>
+        <div class="row">
+          <div class="how-work__card col-xl-4">
+            <div class="how-work__card-icon">
+              <img src="/img/create-svg.svg" alt="create svg">
+            </div>
+            <div class="how-work__card-header">Create An Account</div>
+            <div class="how-work__card-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>
+          </div>
+          <div class="how-work__card col-xl-4">
+            <div class="how-work__card-icon">
+              <img src="/img/email-svg.svg" alt="email svg">
+            </div>
+            <div class="how-work__card-header">Confirm Email</div>
+            <div class="how-work__card-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>
+          </div>
+          <div class="how-work__card col-xl-4">
+            <div class="how-work__card-icon">
+              <img src="/img/result-svg.svg" alt="">
+            </div>
+            <div class="how-work__card-header">See Results</div>
+            <div class="how-work__card-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+
+    <section class="pricing container">
+      <div class="row align-items-center">
+        <div class="col-xl-4">
+          <h2 class="pricing__header">Pricing Plan</h2>
+          <p class="pricing__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
+          <div class="pricing__btns">
+            <a href="#" class="active">Monthly</a>
+            <a href="#">Yearly</a>
+          </div>
+        </div>
+        <div class="col-xl-4">
+          <div class="pricing-card">
+            <div class="pricing-card__icon">
+              <div class="pricing-card__icon-wrap">
+                <img src="/img/standart-svg.svg" alt="standart svg">
+              </div>
+            </div>
+            <h4 class="pricing-card__header">Standart</h4>
+            <div class="pricing-card__list">
+              <ul>
+                <li class="pricing-card__list-item">2gb Hosting</li>
+                <li class="pricing-card__list-item">10 Custom Domain</li>
+                <li class="pricing-card__list-item">SSD Hosting</li>
+                <li class="pricing-card__list-item">50gb Bandwith</li>
+                <li class="pricing-card__list-item">Free Support</li>
+              </ul>
+            </div>
+            <div class="pricing-card__price"><span>$</span>19.00</div>
+            <a class="pricing-card__btn" href="#">Try Now</a>
+          </div>
+        </div>
+        <div class="col-xl-4">
+          <div class="pricing-card">
+            <div class="pricing-card__icon">
+              <div class="pricing-card__icon-wrap">
+                <img src="/img/premium-svg.svg" alt="premium svg">
+              </div>
+            </div>
+            <h4 class="pricing-card__header">Premium</h4>
+            <div class="pricing-card__list">
+              <ul>
+                <li class="pricing-card__list-item">2gb Hosting</li>
+                <li class="pricing-card__list-item">10 Custom Domain</li>
+                <li class="pricing-card__list-item">SSD Hosting</li>
+                <li class="pricing-card__list-item">50gb Bandwith</li>
+                <li class="pricing-card__list-item">Free Support</li>
+              </ul>
+            </div>
+            <div class="pricing-card__price"><span>$</span>49.00</div>
+            <a class="pricing-card__btn" href="#">Try Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="help-background">
+      <section class="get-started container">
+        <div class="row align-items-center">
+          <div class="col-xl-4 offset-xl-2">
+            <div class="get-started__header">Try 30 Days Free Trial</div>
+            <p class="get-started__caption">No credit card required</p>
+          </div>
+          <div class="col-xl-3 offset-xl-1">
+            <a href="#" class="get-started__btn">
+              Get Started 
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="footer-background">
+      <div class="subscribe container">
+        <div class="row">
+          <div class="col-xl-6 offset-xl-3">
+            <h2 class="subscribe__header">AppSon</h2>
+            <form action="#" class="subscribe__input-form input-form">
+              <input type="email" placeholder="Enter Your Email">
+              <button type="submit">subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-background">
+      <footer class="footer container">
+        <div class="row align-items-center">
+          <div class="col-xl-5 footer__copyrights">
+            © 2018 Copyright, All Rights Reserved by AppSon
+          </div>
+          <div class="col-xl-4 offset-xl-1 footer__nav">
+            <ul>
+              <li><a href="#" class="footer__nav-item">Terms & Condition</a></li>
+              <li><a href="#" class="footer__nav-item">Privacy Policy</a></li>
+              <li><a href="#" class="footer__nav-item">Help</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xl-2 footer__social">
+            <ul>
+              <li><a href="#" class="footer__nav-item">
+                <svg 
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="10px" height="20px">
+               <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                d="M9.276,-0.002 L7.036,-0.002 C5.322,-0.002 4.091,0.376 3.343,1.133 C2.595,1.890 2.221,3.005 2.221,4.477 L2.221,5.881 C2.221,6.252 1.898,6.552 1.499,6.552 L0.725,6.552 C0.326,6.552 0.003,6.853 0.003,7.224 L0.003,9.328 C0.003,9.699 0.326,9.999 0.725,9.999 L1.499,9.999 C1.898,9.999 2.221,10.300 2.221,10.671 L2.221,19.328 C2.221,19.699 2.545,20.000 2.943,20.000 L5.949,20.000 C6.347,20.000 6.671,19.699 6.671,19.328 L6.671,10.671 C6.671,10.300 6.994,9.999 7.393,9.999 L8.911,9.999 C9.309,9.999 9.667,9.700 9.708,9.331 L9.948,7.220 C9.990,6.852 9.701,6.552 9.302,6.552 L7.393,6.552 C6.994,6.552 6.671,6.252 6.671,5.881 L6.671,4.829 C6.671,4.570 6.683,4.369 6.710,4.228 C6.736,4.086 6.794,3.947 6.886,3.809 C6.977,3.672 7.125,3.577 7.330,3.524 C7.534,3.471 7.806,3.445 8.145,3.445 L9.276,3.445 C9.675,3.445 9.998,3.144 9.998,2.774 L9.998,0.670 C9.998,0.299 9.675,-0.002 9.276,-0.002 Z"/>
+               </svg>
+              </a></li>
+              <li><a href="#" class="footer__nav-item">
+                <svg 
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="18px" height="16px">
+               <path fill-rule="evenodd"  fill="rgb(216, 216, 216)"
+                d="M17.469,2.260 C17.380,2.287 17.291,2.313 17.203,2.336 C16.660,2.480 16.611,2.290 17.003,1.872 C17.179,1.684 17.334,1.480 17.469,1.260 C17.772,0.765 17.509,0.551 16.995,0.781 C16.811,0.863 16.625,0.938 16.435,1.005 C15.905,1.191 15.153,0.909 14.680,0.595 C14.084,0.198 13.406,-0.001 12.646,-0.001 C11.582,-0.001 10.675,0.393 9.925,1.180 C9.175,1.968 8.800,2.920 8.800,4.037 C8.800,4.190 8.808,4.345 8.825,4.502 C8.852,4.758 8.441,4.943 7.887,4.861 C6.689,4.684 5.550,4.302 4.471,3.718 C3.402,3.139 2.457,2.409 1.639,1.531 C1.247,1.111 0.718,1.147 0.572,1.714 C0.484,2.054 0.441,2.407 0.441,2.774 C0.441,3.466 0.596,4.108 0.905,4.699 C1.059,4.994 1.240,5.261 1.447,5.499 C1.795,5.900 1.742,6.133 1.257,5.990 C0.772,5.847 0.417,5.636 0.417,5.649 C0.417,5.663 0.417,5.675 0.417,5.675 C0.417,6.649 0.708,7.506 1.292,8.243 C1.651,8.698 2.069,9.048 2.545,9.296 C3.046,9.556 3.280,9.702 2.999,9.740 C2.830,9.763 2.660,9.774 2.489,9.774 C2.373,9.774 2.251,9.769 2.124,9.758 C1.924,9.740 1.888,10.179 2.192,10.672 C2.434,11.063 2.743,11.408 3.120,11.706 C3.503,12.009 3.916,12.226 4.359,12.359 C4.897,12.520 5.005,12.814 4.525,13.115 C3.338,13.863 2.024,14.237 0.583,14.237 C0.421,14.237 0.266,14.233 0.118,14.226 C-0.138,14.213 0.034,14.450 0.530,14.723 C2.078,15.574 3.755,16.000 5.561,16.000 C6.926,16.000 8.208,15.772 9.407,15.318 C10.605,14.864 11.629,14.256 12.479,13.493 C13.328,12.731 14.061,11.854 14.676,10.862 C15.291,9.870 15.749,8.835 16.051,7.756 C16.353,6.677 16.504,5.596 16.504,4.512 C16.504,4.414 16.503,4.327 16.501,4.250 C16.499,4.104 16.864,3.712 17.272,3.310 C17.456,3.129 17.632,2.938 17.800,2.739 C18.170,2.297 18.006,2.096 17.469,2.260 Z"/>
+               </svg>
+              </a></li>
+              <li><a href="#" class="footer__nav-item">
+                <svg 
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="19px" height="14px">
+               <path fill-rule="evenodd"  fill="rgb(216, 216, 216)"
+                d="M18.669,2.248 C18.436,1.180 17.610,0.392 16.615,0.274 C14.260,-0.004 11.875,-0.005 9.502,-0.004 C7.128,-0.005 4.743,-0.004 2.387,0.274 C1.393,0.392 0.567,1.180 0.335,2.248 C0.004,3.770 0.000,5.430 0.000,6.996 C0.000,8.563 0.000,10.224 0.331,11.745 C0.563,12.813 1.389,13.601 2.384,13.719 C4.740,13.997 7.124,13.998 9.498,13.997 C11.872,13.998 14.256,13.997 16.611,13.719 C17.606,13.601 18.432,12.813 18.665,11.745 C18.996,10.224 18.997,8.563 18.997,6.996 C18.997,5.430 19.000,3.770 18.669,2.248 ZM7.047,10.114 C7.047,7.892 7.047,5.693 7.047,3.471 C9.060,4.582 11.061,5.686 13.086,6.803 C11.066,7.911 9.066,9.007 7.047,10.114 Z"/>
+               </svg>
+              </a></li>
+            </ul>
+
+            
+          </div>
+          <a href="#header" class="footer__up-btn"><svg 
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="18px" height="24px">
+           <path fill-rule="evenodd"  fill="rgb(15, 123, 255)"
+            d="M0.255,7.838 C-0.085,8.165 -0.085,8.710 0.255,9.048 C0.585,9.375 1.133,9.375 1.462,9.048 L7.640,2.915 L7.640,23.153 C7.641,23.625 8.019,24.000 8.494,24.000 C8.969,24.000 9.359,23.625 9.359,23.153 L9.359,2.915 L15.526,9.048 C15.867,9.375 16.416,9.375 16.745,9.048 C17.085,8.710 17.085,8.165 16.745,7.838 L9.103,0.254 C8.774,-0.085 8.226,-0.085 7.897,0.254 L0.255,7.838 Z"/>
+           </svg></a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
