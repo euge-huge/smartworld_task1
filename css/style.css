@@ -673,6 +673,54 @@ body {
   width: 45px;
   height: 45px;
 }
+.burger-menu {
+  display: none;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.burger-menu span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  margin-top: 8px;
+  background: #000;
+}
+.burger-menu span:first-child {
+  margin-top: 0;
+}
+.burger-menu .lines,
+.burger-menu .crossed {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.burger-menu .crossed {
+  display: none;
+}
+.burger-menu .lines {
+  display: block;
+}
+.burger-menu.active .crossed {
+  display: block;
+}
+.burger-menu.active .lines {
+  display: none;
+}
+.burger-menu.active .crossed span {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+}
+.burger-menu.active .crossed span:first-child {
+  transform: rotateZ(45deg);
+}
+.burger-menu.active .crossed span:last-child {
+  transform: rotateZ(-45deg);
+}
 @keyframes fade {
   from {
     opacity: 0;
@@ -709,6 +757,12 @@ body {
     border-radius: 1rem;
     max-width: 80%;
     margin: 0 auto;
+  }
+  .features-card {
+    margin-top: 2rem;
+  }
+  .features-card:nth-child(2) {
+    margin-top: 2rem;
   }
   .pricing {
     text-align: center;
@@ -747,5 +801,8 @@ body {
   }
   .header-top__navigation {
     display: none;
+  }
+  .header .burger-menu {
+    display: inline-block;
   }
 }
