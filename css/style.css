@@ -274,7 +274,7 @@ body {
 .how-work__card {
   padding-top: 5rem;
 }
-.how-work__card:last-child .how-work__card-icon {
+.how-work__card-icon {
   z-index: 5;
   display: flex;
   align-items: center;
@@ -681,10 +681,71 @@ body {
     opacity: 1;
   }
 }
-@media screen and (max-width: 1367px) {
-  .header-top__logo {
-    height: 7rem;
-    width: 13rem;
-    font-size: 2.4rem;
+@media screen and (max-width: 1366px) {
+  .footer__up-btn {
+    margin: 1rem auto 0 auto;
+    position: relative;
+    bottom: unset;
+    right: unset;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .features-stuff {
+    min-height: 1600px;
+  }
+  .feature-staff-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature-staff-card__block:last-child {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .feature-staff-card__content {
+    text-align: center;
+    background-color: #ffffff96;
+    border-radius: 1rem;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .pricing {
+    text-align: center;
+  }
+  .pricing__btns {
+    margin: 0 auto;
+  }
+  .pricing-card {
+    margin: 1rem auto;
+  }
+  .news__latest {
+    text-align: center;
+  }
+  .news__another {
+    margin: 2rem auto;
+  }
+  .get-started {
+    text-align: center;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer__nav ul {
+    justify-content: center;
+  }
+  .footer__nav ul li {
+    padding: 0 1rem;
+  }
+  .footer__social ul {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 960px) {
+  .header__devices {
+    display: none;
+  }
+  .header-top__navigation {
+    display: none;
   }
 }

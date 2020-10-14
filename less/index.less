@@ -296,16 +296,7 @@ body {
   &__card {
     padding-top: 5rem;
 
-    &:last-child &-icon {
-      // &::after {
-      //   content: "";
-      //   position: absolute;
-      //   right: -38%;
-      //   height: 1px;
-      //   width: 75%;
-      //   background-color: #0f7bff;
-      // }
-
+    &-icon {
       z-index: 5;
       display: flex;
       align-items: center;
@@ -788,4 +779,99 @@ body {
   }
 }
 
-@import url("./mediaQ.less");
+@media screen and (max-width: 1366px) {
+  .footer {
+    &__up-btn {
+      margin: 1rem auto 0 auto;
+      position: relative;
+      bottom: unset;
+      right: unset;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .features-stuff {
+    min-height: 1600px;
+  }
+
+  .feature-staff-card {
+    &__block {
+      &:last-child {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__content {
+      text-align: center;
+      background-color: #ffffff96;
+      border-radius: 1rem;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  .pricing {
+    text-align: center;
+
+    &__btns {
+      margin: 0 auto;
+    }
+
+    &-card {
+      margin: 1rem auto;
+    }
+  }
+
+  .news {
+    &__latest {
+      text-align: center;
+    }
+
+    &__another {
+      margin: 2rem auto;
+    }
+  }
+
+  .get-started {
+    text-align: center;
+  }
+
+  .footer {
+    text-align: center;
+
+    &__nav {
+      ul {
+        justify-content: center;
+        li {
+          padding: 0 1rem;
+        }
+      }
+    }
+    &__social {
+      ul {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .header {
+    &__devices {
+      display: none;
+    }
+
+    &-top {
+      &__navigation {
+        display: none;
+      }
+    }
+  }
+}
