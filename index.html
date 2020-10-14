@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+
     <header class="header" id="header">
       <div class="header__background"></div>
       <div class="header__top header-top">
@@ -65,7 +66,6 @@
       </section>
     </div>
     
-
     <section class="features-stuff">
       <div class="features-stuff__back">
         <div class="container">
@@ -143,15 +143,14 @@
       </section>
     </div>
     
-
     <section class="pricing container">
       <div class="row align-items-center">
         <div class="col-xl-4">
           <h2 class="pricing__header">Pricing Plan</h2>
           <p class="pricing__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
           <div class="pricing__btns">
-            <a href="#" class="active">Monthly</a>
-            <a href="#">Yearly</a>
+            <a href="#" class="pricing__btns-btn active" id="monthly-btn">Monthly</a>
+            <a href="#" class="pricing__btns-btn" id="year-btn">Yearly</a>
           </div>
         </div>
         <div class="col-xl-4">
@@ -171,7 +170,7 @@
                 <li class="pricing-card__list-item">Free Support</li>
               </ul>
             </div>
-            <div class="pricing-card__price"><span>$</span>19.00</div>
+            <div class="pricing-card__price" id="standart-price"><span>$</span>19.00</div>
             <a class="pricing-card__btn" href="#">Try Now</a>
           </div>
         </div>
@@ -192,7 +191,7 @@
                 <li class="pricing-card__list-item">Free Support</li>
               </ul>
             </div>
-            <div class="pricing-card__price"><span>$</span>49.00</div>
+            <div class="pricing-card__price" id="premium-price"><span>$</span>49.00</div>
             <a class="pricing-card__btn" href="#">Try Now</a>
           </div>
         </div>
@@ -200,10 +199,150 @@
     </section>
 
     <div class="help-background">
+      <section class="feedback">
+        <div class="feedback__background"></div>
+        <div class="container">
+          <div class="row">
+            <div class="feedback__content col-xl-7 offset-xl-5">
+              <h2 class="feedback__header">Trusted By More Than 55M Peoples</h2>
+              <div class="feedback__carusel carusel">
+                <div class="carusel__body">
+                  <div class="carusel__group carusel__fade" style="display: flex;">
+                    <div class="carusel__item">
+                      <div class="carusel__item-header">
+                        <h4>Raisa Mani 1</h4>
+                        <img src="/img/twitter-icon.png" alt="Twitter icon">
+                      </div>
+                      <div class="carusel__item-role">Envato Customer</div>
+                      <p class="carusel__item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.</p>
+                    </div>
+  
+                    <div class="carusel__item">
+                      <div class="carusel__item-header">
+                        <h4>Raisa Mani 2</h4>
+                        <img src="/img/twitter-icon.png" alt="Twitter icon">
+                      </div>
+                      <div class="carusel__item-role">Envato Customer</div>
+                      <p class="carusel__item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.</p>
+                    </div>
+                  </div>
+
+                  <div class="carusel__group carusel__fade" style="display: none;" >
+                    <div class="carusel__item">
+                      <div class="carusel__item-header">
+                        <h4>Raisa Mani 3</h4>
+                        <img src="/img/twitter-icon.png" alt="Twitter icon">
+                      </div>
+                      <div class="carusel__item-role">Envato Customer</div>
+                      <p class="carusel__item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.</p>
+                    </div>
+  
+                    <div class="carusel__item">
+                      <div class="carusel__item-header">
+                        <h4>Raisa Mani 4</h4>
+                        <img src="/img/twitter-icon.png" alt="Twitter icon">
+                      </div>
+                      <div class="carusel__item-role">Envato Customer</div>
+                      <p class="carusel__item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.</p>
+                    </div>
+                  </div>
+
+                  <div class="carusel__group carusel__fade" style="display: none;">
+                    <div class="carusel__item">
+                      <div class="carusel__item-header">
+                        <h4>Raisa Mani 5</h4>
+                        <img src="/img/twitter-icon.png" alt="Twitter icon">
+                      </div>
+                      <div class="carusel__item-role">Envato Customer</div>
+                      <p class="carusel__item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.</p>
+                    </div>
+  
+                    <div class="carusel__item">
+                      <div class="carusel__item-header">
+                        <h4>Raisa Mani 6</h4>
+                        <img src="/img/twitter-icon.png" alt="Twitter icon">
+                      </div>
+                      <div class="carusel__item-role">Envato Customer</div>
+                      <p class="carusel__item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.</p>
+                    </div>
+                  </div>
+                  
+                  
+                </div>
+                <div class="carusel__settings">
+                  <div class="carusel__dot active" onclick="showSlide(1)"></div>
+                  <div class="carusel__dot" onclick="showSlide(2)"></div>
+                  <div class="carusel__dot" onclick="showSlide(3)"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    </div>
+    
+
+    <section class="news container">
+      <div class="row">
+        <div class="col-xl-8 offset-xl-2">
+          <h2 class="news__header">Latest News From Us</h2>
+          <p class="news__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>    
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 news__latest">
+          <img src="./img/news-latest.png" alt="Latest News">
+          <h4 class="news__latest-header">
+            <a href="#">
+              The master bedroom suite is phenomenally
+              spacious
+            </a></h4>
+          <p class="news__latest-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          <a href="#" class="news__latest-link">Continue Reading 
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+          </a>
+        </div>
+        <div class="col-xl-6 news__right-side">
+            <div class="news__another">
+              <img src="/img/news-1.png" alt="">
+              <div class="news__another-body">
+                <h4 class="news__another-body-header">
+                  <a href="#">The master bedroom suite is phenomey 
+                    spacious</a></h4>
+                <p class="news__another-body-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+              </div>
+            </div>
+            <div class="news__another">
+              <img src="/img/news-2.png" alt="">
+              <div class="news__another-body">
+                <h4 class="news__another-body-header">
+                  <a href="#">The master bedroom suite is phenomey 
+                    spacious</a></h4>
+                <p class="news__another-body-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+              </div>
+            </div>
+            <div class="news__another">
+              <img src="/img/news-3.png" alt="">
+              <div class="news__another-body">
+                <h4 class="news__another-body-header">
+                  <a href="#">The master bedroom suite is phenomey 
+                    spacious</a></h4>
+                <p class="news__another-body-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <div class="help-background">
       <section class="get-started container">
         <div class="row align-items-center">
           <div class="col-xl-4 offset-xl-2">
-            <div class="get-started__header">Try 30 Days Free Trial</div>
+            <h2 class="get-started__header">Try 30 Days Free Trial</h2>
             <p class="get-started__caption">No credit card required</p>
           </div>
           <div class="col-xl-3 offset-xl-1">
@@ -289,5 +428,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="/js/script.js"></script>
   </body>
 </html>

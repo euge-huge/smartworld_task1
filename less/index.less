@@ -1,6 +1,5 @@
 // out: ../css/style.css
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
-
 @import url("./variables.less");
 
 html {
@@ -27,7 +26,6 @@ body {
     z-index: -1;
     background-image: url("../img/header-background.png");
     background-size: cover;
-    background-position-x: -75px;
     background-repeat: no-repeat;
   }
 
@@ -35,7 +33,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1640px;
+    max-width: 85%;
     margin: 0 auto;
     &__logo {
       display: flex;
@@ -298,7 +296,17 @@ body {
   &__card {
     padding-top: 5rem;
 
-    &-icon {
+    &:last-child &-icon {
+      // &::after {
+      //   content: "";
+      //   position: absolute;
+      //   right: -38%;
+      //   height: 1px;
+      //   width: 75%;
+      //   background-color: #0f7bff;
+      // }
+
+      z-index: 5;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -348,7 +356,9 @@ body {
     border: 1px @brand-color solid;
     border-radius: 2.5rem;
 
-    a {
+    &-btn {
+      margin: -1px;
+      width: 100%;
       border-radius: 2.5rem;
       padding: 1rem 5rem;
 
@@ -358,7 +368,6 @@ body {
     }
 
     .active {
-      margin: -1px;
       width: 100%;
       background-color: @brand-color;
       color: #fff;
@@ -442,6 +451,190 @@ body {
         text-decoration: none;
         background-color: @brand-color;
         color: #fff;
+      }
+    }
+  }
+}
+
+.feedback {
+  position: relative;
+  padding: 12rem 0;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/feedback-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
+  }
+
+  &__content {
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #ffffff96;
+  }
+
+  &__header {
+    font-size: 3.2rem;
+    font-weight: 600;
+  }
+
+  &__carusel {
+    margin-top: 5rem;
+  }
+}
+
+.carusel {
+  &__group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  &__item {
+    margin: 0;
+    padding: 3.5rem 2.5rem;
+    width: 48%;
+    background-color: #fff;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 25px 0px rgba(165, 165, 165, 0.1);
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      h4 {
+        font-size: 1.8rem;
+        font-weight: 600;
+      }
+      img {
+        height: 12px;
+        width: 17px;
+      }
+    }
+
+    &-role {
+      margin-top: 0.5rem;
+      font-size: 1.4rem;
+      color: @help-text;
+    }
+
+    &-description {
+      margin-top: 2rem;
+      font-size: 1.6rem;
+      color: @help-text;
+    }
+  }
+
+  &__settings {
+    margin-top: 3rem;
+    width: 9rem;
+    display: flex;
+    justify-content: space-between;
+    .carusel__dot {
+      cursor: pointer;
+      background: #d4d4d4;
+      width: 2rem;
+      height: 1rem;
+      border-radius: 1rem;
+    }
+
+    .active {
+      background-color: @brand-color;
+      width: 3rem;
+    }
+  }
+}
+
+.news {
+  padding: 13rem 0;
+  &__header {
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 600;
+  }
+
+  &__caption {
+    margin: 3rem 0;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 2.25;
+    color: @help-text;
+  }
+
+  &__latest {
+    &-header {
+      margin: 2rem 0;
+      font-size: 2.4rem;
+      color: @brand-color;
+      line-height: 1.5;
+
+      a {
+        &:hover {
+          color: @brand-color;
+        }
+      }
+    }
+
+    &-caption {
+      margin-bottom: 2rem;
+      font-size: 1.6rem;
+      color: @help-text;
+      line-height: 1.7;
+    }
+
+    &-link {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: @brand-color;
+      line-height: 1.7;
+    }
+  }
+
+  &__right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__another {
+    display: flex;
+    justify-content: space-between;
+
+    &-body {
+      margin-left: 2rem;
+      &-header {
+        font-size: 1.8rem;
+        font-weight: 600;
+
+        line-height: 1.5;
+
+        a {
+          color: rgb(51, 51, 51);
+
+          &:hover {
+            color: @brand-color;
+            text-decoration: none;
+          }
+        }
+      }
+
+      &-caption {
+        margin-top: 2rem;
+        font-size: 1.6rem;
+        color: @help-text;
+        line-height: 1.688;
       }
     }
   }
@@ -536,7 +729,7 @@ body {
 
 .footer {
   position: relative;
-  margin-top: 1px;
+  margin-top: 2px;
   padding: 4rem;
   color: #fff;
 
@@ -585,3 +778,14 @@ body {
     height: 45px;
   }
 }
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@import url("./mediaQ.less");
