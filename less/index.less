@@ -8,6 +8,7 @@ html {
 
 body {
   font-family: "Quicksand", Courier, monospace;
+  overflow-x: hidden;
 }
 
 .help-background {
@@ -372,7 +373,7 @@ body {
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 68px 0px rgba(165, 165, 165, 0.25);
-    width: 360px;
+    width: 100%;
     height: 576px;
 
     display: flex;
@@ -567,6 +568,10 @@ body {
   }
 
   &__latest {
+    img {
+      max-width: 90%;
+    }
+
     &-header {
       margin: 2rem 0;
       font-size: 2.4rem;
@@ -596,6 +601,8 @@ body {
   }
 
   &__right-side {
+    max-width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -607,6 +614,9 @@ body {
 
     &-body {
       margin-left: 2rem;
+      img {
+        max-width: 100%;
+      }
       &-header {
         font-size: 1.8rem;
         font-weight: 600;
@@ -870,6 +880,7 @@ body {
 
   .features-card {
     margin-top: 2rem;
+    border: none;
 
     &:nth-child(2) {
       margin-top: 2rem;
@@ -935,6 +946,34 @@ body {
 
     .burger-menu {
       display: inline-block;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 8px;
+  }
+
+  .news {
+    &__right-side {
+      img {
+        display: none;
+      }
+      
+    }
+  }
+
+  .features-stuff {
+    min-height: 500px;
+  }
+  .feature-staff-card {
+    &__block {
+      margin-top: 3rem;
+    }
+
+    &__images {
+        display: none;
     }
   }
 }
